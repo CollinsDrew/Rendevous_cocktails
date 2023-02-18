@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.App {
+  background-color: #1d1e22;
+  color: white;
+  min-height: 100vh;
+}
+
+.App-header {
+  padding: 2rem;
+}
+
+input[type="text"] {
+  min-width: 0;
+}
+
+button[type="button"] {
+  transition: all 0.2s;
+}
+
+button[type="button"]:hover {
+  background-color: #4fd1c5;
+  border-color: #4fd1c5;
+}
+
+img {
+  transition: all 0.2s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}

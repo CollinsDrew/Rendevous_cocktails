@@ -35,3 +35,7 @@ img {
 img:hover {
   transform: scale(1.1);
 }
+
+.ingredient-card {
+  height: 200px;
+}

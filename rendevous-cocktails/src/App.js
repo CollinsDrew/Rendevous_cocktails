@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CocktailList from "./Components/CocktailList";
 import CocktailDetails from "./Components/CocktailDetails";
+import Hero from "./Components/Hero";
+import IngredientList from "./Components/IngredientCard";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
@@ -18,9 +20,24 @@ function App() {
       console.error(error);
     }
   };
+  const searchCocktailsAgain = async (e) => {
+    console.log(e);
+    // try {
+    //   const response = await fetch(
+    //     `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchQuery}`
+    //   );
+    //   const data = await response.json();
+    //   setCocktails(data.drinks);
+    // } catch (error) {
+    //   console.error(error);
+    // }
+  };
 
   return (
     <Router>
+      <Hero />
+      <IngredientList />
+
       <div className="container mx-auto my-10">
         <Routes>
           <Route
